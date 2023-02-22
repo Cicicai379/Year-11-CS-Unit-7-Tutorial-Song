@@ -1,3 +1,5 @@
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -9,13 +11,15 @@ public class SongTester {
 
     @org.junit.jupiter.api.Test
     public void TestForTitleAndArtist() {
-        assertEquals("Wrong title!", "Lavender Haze", song.getTitle());
-        assertEquals("Wrong artist!", "Taylor Swift", song.getArtist());
+        assertEquals("Lavender Haze", song.getTitle(),"Wrong title!");
+        assertEquals("Taylor Swift", song.getArtist(), "Wrong artist!");
     }
+
+
 
     @org.junit.jupiter.api.Test
     public void TestForDataEncapsulation() {
-        assertEquals("Make sure that your attributes are private!", 0, song.getClass().getFields().length);
+        assertEquals( 0, song.getClass().getFields().length,"Make sure that your attributes are private!");
     }
 
     @org.junit.jupiter.api.Test
